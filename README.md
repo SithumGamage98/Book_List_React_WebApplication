@@ -104,3 +104,6 @@ About
 
 ## Book items and Footer
 ![Footer](https://user-images.githubusercontent.com/100986253/215316152-8013611a-8afc-4955-a3ba-e6b38b9b5a58.png)
+
+## Buy book via Amozon web site
+![After_clicking Amozon Button](https://user-images.githubusercontent.com/100986253/215316205-2b61765d-ccfd-4679-8603-39296e7e1037.png)
