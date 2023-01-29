@@ -11,26 +11,6 @@ Explore
  
 @SithumGamage98 
 SithumGamage98
-/
-Online-Vehicle-Registration-System---Back-end
-Public
-Fork your own copy of SithumGamage98/Online-Vehicle-Registration-System---Back-end
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Online-Vehicle-Registration-System---Back-end/README.md
-@SithumGamage98
-SithumGamage98 Add files via upload
-Latest commit 0932e35 on Aug 10, 2022
- History
- 1 contributor
-70 lines (38 sloc)  3.28 KB
 
 # Getting Started with Create React App
 
@@ -116,4 +96,4 @@ API
 Training
 Blog
 About
-Online-Vehicle-Registration-System---Back-end/README.md at master · SithumGamage98/Online-Vehicle-Registration-System---Back-end 
+
