@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import axios from 'axios'
+import "./books.css";
+import Header from './Header';
+import Footer from './Footer';
+import Search_bar from './Search_bar';
+import bookpic from './images/Book2.jpg'
 
 export default function Book() {
 
@@ -23,53 +28,61 @@ export default function Book() {
 
 
       return (
-        <>
-          <h1 className="font-bold text-black text-center text-4xl py-5 lg:text-6xl">
-            Bestsellers
-          </h1>
-          <section className="grid grid-cols-1 gap-10 px-5 pb-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="backg">
+          {/*Header*/}
+           <div><Header/></div>
+          <br></br>
+          {/*Search Bar*/}
+          <div class="search">
+          <Search_bar/> 
+          </div>
+          <br></br> <br></br><br></br>
+          <section className="grid grid-cols-5 gap-10 px-5 pb-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {books.map((book) => {
               const {
                 author,
-                age_group,
                 book_image,
                 buy_links,
+                book_uri,
                 description,
                 primary_isbn10,
                 publisher,
                 price,
                 rank,
                 title,
+                
+
               } = book
     
               return (
-
-              <article key={rank} className="bg-gray-100 py-5 px-10 rounded-lg sm:px-5">
+              
+                                          
+              <article key={rank} className="bg-yellow-400  py-5 px-10 rounded-lg sm:px-5">
               <div>
                 <img
                   src={book_image}
                   alt={title}
                   className="block mx-auto w-1/2"
                 />
-
+              <hr class="horiz_Lines"></hr>
               </div>
 
               <div>
-                <h3 className="font-bold my-2 text-2xl">{title}</h3>
-                <p lassName="mb-4">{description}</p>
+                <h3 className="font-bold my-2 text-2xl" style={{color:"white"}}>{title}</h3>
+                <p lassName="mb-4">"{description}"</p>
                 <p>
                   <span className="font-bold">Author:</span> {author}
                 </p>
+
+              <hr></hr>
                 
               </div>
               <ul className="mb-4">
 
-                <li><span className="font-bold">Publisher:</span> {publisher}</li>
-                <li><span className="font-bold">ISBN:</span> {primary_isbn10}</li>
-                <li>Age Group : {age_group}</li>
-                <li><span className="font-bold">Price:</span>Price : {price}</li>
-
-
+                <li><span className="font-bold">Publisher : </span> {publisher}</li>
+                <li><span className="font-bold">ISBN : </span> {primary_isbn10}</li>
+                <li><span className="font-bold">Price : </span>Price : {price}</li>
+               
               </ul>
 
              {/* <ul>
@@ -89,18 +102,23 @@ export default function Book() {
 
                 })}
               </ul>*/}
+              <hr></hr> <br></br><br></br>
+              <article>
 
-              <ul>
+    <ul>              
+      <h2 className="font-bold text-xl" style={{color:"red"}}><center>Buy Now</center></h2>
+      {/*<button href={buy_links[0].url}>{buy_links[0].name}</button> */}
+      <a href={buy_links[0].url} type="button" class="buy_button" style={{width:"300px"}}><i className="fa-solid fa-cart-shopping"></i>&nbsp;{buy_links[0].name}</a>
+      </ul>
 
-                <h2 className="font-bold text-xl">Buy Now : </h2>
-                <a href={buy_links[0].url}>{buy_links[0].name}</a>
-
-              </ul>
               </article>
+              </article>
+              
               )
             })}
           </section>
-        </>
+          <Footer/>
+        </div>
       )
     }
     
