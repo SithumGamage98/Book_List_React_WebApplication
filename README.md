@@ -1,17 +1,9 @@
-# Book_List_React_WebApplication
-Used Technologies - ReactJS/NYT API(Book API) /CSS
+# Project Name -  Book_List_React_WebApplication
+# Used Technologies - ReactJS/NYT API(Book API) /CSS
 
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@SithumGamage98 
-SithumGamage98
 
+
+# HOW TO RUN APPLICATION...
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -96,4 +88,6 @@ API
 Training
 Blog
 About
+
+### UI - Screen Shots
 
