@@ -4,7 +4,7 @@
 ### Functions - User can view Book list and can get details about books. If user wants to purchase a book , user can click "Amozon" button.
 ##  Then he navigate to Amozone web site. After user can purchase any book according to the steps mentioned above.
 
-# HOW TO RUN APPLICATION...
+## HOW TO RUN APPLICATION...
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
