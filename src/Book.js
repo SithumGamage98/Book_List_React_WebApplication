@@ -51,12 +51,10 @@ export default function Book() {
                 rank,
                 title,
                 
-
               } = book
     
               return (
-              
-                                          
+                                   
               <article key={rank} className="bg-yellow-400  py-5 px-10 rounded-lg sm:px-5">
               <div>
                 <img
@@ -95,11 +93,8 @@ export default function Book() {
 
                       <li>{name}</li>
                       <a href={url}>Buy Now :</a>
-
-
                     </div>
                   )
-
                 })}
               </ul>*/}
               <hr></hr> <br></br><br></br>
